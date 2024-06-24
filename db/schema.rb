@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_21_091713) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_24_094942) do
+  create_table "blogs", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "contents", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "blog_id", null: false
+    t.integer "video_id", null: false
+    t.index ["blog_id"], name: "index_contents_on_blog_id"
+    t.index ["video_id"], name: "index_contents_on_video_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -23,4 +40,14 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_21_091713) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "videos", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "video_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "contents", "blogs"
+  add_foreign_key "contents", "videos"
 end
