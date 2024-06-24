@@ -270,7 +270,7 @@ PLATFORMS
   arm-linux
   arm64-darwin
   x86-linux
-  x86_64-darwin
+  x86_64-darwin-20
   x86_64-linux
 
 DEPENDENCIES
@@ -296,4 +296,4 @@ RUBY VERSION
    ruby 3.1.2p20
 
 BUNDLED WITH
-   2.5.6
+   2.5.14
