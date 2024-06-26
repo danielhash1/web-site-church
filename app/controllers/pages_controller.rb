@@ -1,13 +1,9 @@
 class PagesController < ApplicationController
- skip_before_action :authenticate_user!
+  skip_before_action :authenticate_user!, only: :about
   def index
-
   end
 
   def about
   end
 
-  def home
-   @contents = Content.all
-  end
 end
