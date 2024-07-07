@@ -5492,3 +5492,297 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 196ms (Views: 154.3ms | ActiveRecord: 2.4ms | Allocations: 64524)
 
 
+Started GET "/users/sign_up" for ::1 at 2024-06-26 17:22:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 573)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 59.9ms | Allocations: 11355)
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 607)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 152.8ms | Allocations: 47951)
+Completed 200 OK in 217ms (Views: 168.3ms | ActiveRecord: 2.4ms | Allocations: 70212)
+
+
+Started GET "/" for ::1 at 2024-06-26 17:36:31 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.9ms | Allocations: 292)
+Completed 200 OK in 12ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 1207)
+
+
+Started GET "/users/sign_up" for ::1 at 2024-06-26 17:36:40 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 55ms (ActiveRecord: 6.6ms | Allocations: 5335)
+
+
+Started GET "/" for ::1 at 2024-06-26 17:36:40 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 24)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 287)
+
+
+Started GET "/" for ::1 at 2024-07-07 13:05:42 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 381)
+Completed 200 OK in 29ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 4807)
+
+
+Started GET "/users/sign_up" for ::1 at 2024-07-07 13:05:53 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 570)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 98.9ms | Allocations: 11282)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 606)
+  Rendered shared/_flashes.html.erb (Duration: 0.5ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 194.3ms | Allocations: 46756)
+Completed 200 OK in 247ms (Views: 198.1ms | ActiveRecord: 2.9ms | Allocations: 64412)
+
+
+Started GET "/users/sign_in" for ::1 at 2024-07-07 13:05:56 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 159)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2259)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 29)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3838)
+Completed 200 OK in 23ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 6080)
+
+
+Started GET "/users/sign_up" for ::1 at 2024-07-07 13:06:05 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 73)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1731)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 3163)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 3856)
+
+
+Started POST "/users/sign_in" for ::1 at 2024-07-07 13:06:05 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"g@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "g@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 45ms (ActiveRecord: 1.6ms | Allocations: 5030)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"g@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 121)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1365)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2886)
+Completed 200 OK in 227ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 4202)
+
+
+Started GET "/users/password/new" for ::1 at 2024-07-07 13:06:08 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 207)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 143)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1475)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3063)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 4182)
+
+
+Started GET "/users/sign_up" for ::1 at 2024-07-07 13:06:08 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 73)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1766)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3198)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 3934)
+
+
+Started POST "/users" for ::1 at 2024-07-07 13:06:34 +0200
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"J", "last_name"=>"T", "email"=>"t@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "t@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 75)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2469)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 128)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 29)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 4039)
+Completed 422 Unprocessable Content in 235ms (Views: 5.7ms | ActiveRecord: 3.0ms | Allocations: 12364)
+
+
+Started POST "/users" for ::1 at 2024-07-07 13:06:49 +0200
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"J", "last_name"=>"T", "email"=>"t@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "t@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (5.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "first_name", "last_name") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["email", "t@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2024-07-07 11:06:49.771159"], ["updated_at", "2024-07-07 11:06:49.771159"], ["first_name", "J"], ["last_name", "T"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 227ms (ActiveRecord: 8.7ms | Allocations: 7573)
+
+
+Started GET "/" for ::1 at 2024-07-07 13:06:49 +0200
+Processing by Rails::WelcomeController#index as TURBO_STREAM
+  Rendering /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 19)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 273)
+
+
+Started GET "/" for ::1 at 2024-07-07 13:06:49 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 214)
+
+
+Started GET "/" for ::1 at 2024-07-07 13:07:33 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 214)
+
+
+Started GET "/users/sign_up" for ::1 at 2024-07-07 13:07:36 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 73)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1709)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 109)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3140)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3626)
+
+
+Started GET "/users/sign_in" for ::1 at 2024-07-07 13:07:39 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 119)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1215)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2646)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 3276)
+
+
+Started POST "/users/sign_in" for ::1 at 2024-07-07 13:07:55 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"t@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "t@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 212ms (ActiveRecord: 0.1ms | Allocations: 2710)
+
+
+Started GET "/" for ::1 at 2024-07-07 13:07:56 +0200
+Processing by Rails::WelcomeController#index as TURBO_STREAM
+  Rendering /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 217)
+
+
+Started GET "/" for ::1 at 2024-07-07 13:07:56 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 214)
+
+
+Started GET "/" for ::1 at 2024-07-07 13:08:40 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 381)
+Completed 200 OK in 20ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 4807)
+
+
+Started GET "/" for ::1 at 2024-07-07 13:08:50 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 24)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 298)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/users/sign_up" for ::1 at 2024-07-07 13:09:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 573)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 89.1ms | Allocations: 11369)
+  Rendered shared/_navbar.html.erb (Duration: 1.6ms | Allocations: 607)
+  Rendered shared/_flashes.html.erb (Duration: 0.9ms | Allocations: 205)
+  Rendered layout layouts/application.html.erb (Duration: 162.0ms | Allocations: 46781)
+Completed 200 OK in 213ms (Views: 177.2ms | ActiveRecord: 3.2ms | Allocations: 67919)
+
+
+Started GET "/users/sign_in" for ::1 at 2024-07-07 13:09:56 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 159)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2258)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 131)
+  Rendered shared/_flashes.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 3837)
+Completed 200 OK in 27ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 6084)
+
+
+Started GET "/users/sign_up" for ::1 at 2024-07-07 13:10:11 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 73)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1736)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3168)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 3892)
+
+
+Started POST "/users/sign_in" for ::1 at 2024-07-07 13:10:13 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"t@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "t@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 266ms (ActiveRecord: 6.1ms | Allocations: 7444)
+
+
+Started GET "/" for ::1 at 2024-07-07 13:10:13 +0200
+Processing by Rails::WelcomeController#index as TURBO_STREAM
+  Rendering /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 294)
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1254)
+
+
+Started GET "/" for ::1 at 2024-07-07 13:10:13 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jiregnaterfa/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 15)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
