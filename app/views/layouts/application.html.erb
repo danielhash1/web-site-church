@@ -10,6 +10,9 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "adaptive", "data-turbo-track": "reload" %>
 
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <%= javascript_importmap_tags %>
   </head>
 
@@ -18,7 +21,6 @@
   <%= render "shared/flashes" %>
     <%= yield %>
     <% if user_signed_in? %>
-    <h2>Hello <%= current_user.email %> </h2>
     <% end %>
   </body>
 </html>

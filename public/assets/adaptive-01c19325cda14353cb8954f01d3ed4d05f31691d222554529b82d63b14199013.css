@@ -1,0 +1,57 @@
+@media (max-width: 1500px) {
+  .hero .hero-blocks .hero-block {
+    margin-left: 20px;
+  }
+  .about-us {
+    margin: 150px 0;
+    margin-top: 350px;
+  }
+  .join-us {
+    height: 60vh;
+  }
+  .join-us .join-us-container h2 {
+    padding-top: 13%;
+  }
+}
+@media (max-width: 1250px) {
+  .hero .hero-container p {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .hero .hero-blocks {
+    margin-top: 150px;
+    gap: 5px;
+  }
+  .hero .hero-blocks .hero-block {
+    margin-left: 5px;
+  }
+  .about-us .aboutUs-container .about-right h3 {
+    font-size: 20px;
+  }
+  .about-us .aboutUs-container .about-right h2 {
+    font-size: 25px;
+  }
+  .features .features-container p {
+    max-width: 65%;
+    margin: 0 auto;
+  }
+  .features .features-container ul li {
+    width: 200px;
+    height: 200px;
+  }
+  .features .features-container ul li img {
+    width: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .hero .hero-blocks {
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
+  .hero .hero-blocks .hero-block {
+    height: 30vh;
+    width: 30%;
+  }
+}/*# sourceMappingURL=adaptive.css.map */
