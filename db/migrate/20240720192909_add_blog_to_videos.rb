@@ -1,5 +1,7 @@
-class AddBlogToVideos < ActiveRecord::Migration[7.1]
+class AddBlogToVideos < ActiveRecord::Migration[6.1]
   def change
-    add_reference :videos, :blog, null: false, foreign_key: true
+    unless column_exists?(:videos, :blog_id)
+      add_column :videos, :blog_id, :integer
+    end
   end
 end

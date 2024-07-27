@@ -1,5 +1,8 @@
-class AddUserIdToVideos < ActiveRecord::Migration[7.1]
+class AddUserIdToVideos < ActiveRecord::Migration[6.1]
   def change
-    add_column :videos, :user_id, :integer
+    unless column_exists?(:videos, :user_id)
+      add_column :videos, :user_id, :integer
+    end
   end
 end
+

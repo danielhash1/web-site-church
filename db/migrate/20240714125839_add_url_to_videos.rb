@@ -1,5 +1,8 @@
-class AddUrlToVideos < ActiveRecord::Migration[7.1]
+class AddUrlToVideos < ActiveRecord::Migration[6.1]
   def change
-    add_column :videos, :url, :string
+    unless column_exists?(:videos, :url)
+      add_column :videos, :url, :string
+    end
   end
 end
+

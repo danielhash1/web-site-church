@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   get 'pages/index'
   get 'pages/about'
-  #devise_for :users
+  devise_for :users
 
-  devise_for :users, controllers: { sessions: "users/sessions", registrations: "users/registrations" }
+  #devise_for :users, controllers: { sessions: "users/sessions", registrations: "users/registrations" }
   #root to: "home#index"
   #root to: "pages#home"
 

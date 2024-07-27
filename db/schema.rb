@@ -39,24 +39,23 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_20_192909) do
     t.datetime "updated_at", null: false
     t.string "first_name"
     t.string "last_name"
-    t.boolean "admin"
+    t.boolean "admin", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   create_table "videos", force: :cascade do |t|
     t.string "title"
-    t.string "description"
-    t.string "video_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text "description"
     t.string "url"
     t.integer "user_id"
-    t.integer "blog_id", null: false
-    t.index ["blog_id"], name: "index_videos_on_blog_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "blog_id"
+    t.index ["user_id"], name: "index_videos_on_user_id"
   end
 
   add_foreign_key "contents", "blogs"
   add_foreign_key "contents", "videos"
-  add_foreign_key "videos", "blogs"
+  add_foreign_key "videos", "users"
 end

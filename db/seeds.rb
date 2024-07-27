@@ -1,12 +1,16 @@
+# db/seeds.rb
+
 # Clear existing data
 User.destroy_all
 Blog.destroy_all
 Video.destroy_all
 
+
+
 # Create Users
 users = User.create!([
-  { first_name: 'Admin', last_name: 'User', email: 'admin@example.com', password: 'password' },
-  { first_name: 'Regular', last_name: 'User', email: 'user@example.com', password: 'password' }
+  { first_name: 'Admin', last_name: 'User', email: 'admin@example.com', password: 'password', password_confirmation: 'password' },
+  { first_name: 'Regular', last_name: 'User', email: 'user@example.com', password: 'password', password_confirmation: 'password' }
 ])
 
 # Create Blogs
