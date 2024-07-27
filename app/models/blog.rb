@@ -1,4 +1,5 @@
 class Blog < ApplicationRecord
-  has_many :contents
-  has_many :videos, through: :contents
+  belongs_to :user
+  has_many :videos, dependent: :destroy
 end
+

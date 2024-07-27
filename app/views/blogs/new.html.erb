@@ -1,0 +1,37 @@
+
+<div style="width: 100%; height: 100vh; margin: 0; padding: 0; box-sizing: border-box; display: flex; justify-content: center; align-items: center; background-color: #f0f0f0;">
+  <div style="width: 100%; height: 100%; padding: 20px; border: 1px solid #ccc; border-radius: 5px; font-family: Arial, sans-serif; background: #fff; box-sizing: border-box;">
+    <h1 style="text-align: center; font-family: Arial, sans-serif; color: #333;">New Blog</h1>
+
+    <%= form_with(model: @blog, local: true) do |form| %>
+      <% if @blog.errors.any? %>
+        <div id="error_explanation" style="color: red; background-color: #fdd; padding: 10px; border: 1px solid red; border-radius: 5px; margin-bottom: 20px;">
+          <h2 style="font-family: Arial, sans-serif; font-size: 1.2em;"><%= pluralize(@blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
+          <ul style="list-style-type: none; padding: 0;">
+            <% @blog.errors.full_messages.each do |message| %>
+              <li style="font-family: Arial, sans-serif; font-size: 1em;"><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div style="margin-bottom: 15px;">
+        <%= form.label :title, nil, style: 'display: block; font-family: Arial, sans-serif; font-weight: bold; margin-bottom: 5px;' %>
+        <%= form.text_field :title, style: 'width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;' %>
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <%= form.label :description, nil, style: 'display: block; font-family: Arial, sans-serif; font-weight: bold; margin-bottom: 5px;' %>
+        <%= form.text_area :description, style: 'width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;' %>
+      </div>
+
+      <div>
+        <%= form.submit 'Save Blog', style: 'display: block; width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 4px; font-family: Arial, sans-serif; font-size: 1em; cursor: pointer;' %>
+      </div>
+    <% end %>
+
+    <div style="text-align: center; margin-top: 20px;">
+      <%= link_to 'Back', blogs_path, style: 'text-decoration: none; color: #007bff; font-family: Arial, sans-serif;' %>
+    </div>
+  </div>
+</div>
